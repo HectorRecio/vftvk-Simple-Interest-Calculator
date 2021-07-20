@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <title></title>Simple Interest Calculator</title>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-       <h1>Simple Interest Calculator</h1>
        <div class="maindiv"> 
+        <h1>Simple Interest Calculator</h1>
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range" onchange="updateRate()" id="rate" min="1" max="20" value="10.25" step="0.25"> 
-        <span id="rate_val">10.25%</span> <br/>
+        Rate <input type="range" id="rate" min="1" max="20" value="10.25" step="0.25"> <span id="rate_val">10.25%</span> <br/>
         No. of Years 
           <select id="years">
              <option value="1">1</option>
@@ -23,14 +21,12 @@
              <option value="8">8</option>
              <option value="9">9</option>
              <option value="10">10</option>
-    
-          </select>  <br/>
-        Interest : <span id="result"></span><br>
+          </select><br/>
         <button onclick="compute()">Compute Interest</button>
+        <span id="result"></span><br>
         </div>
     </body>
     <footer>
-
         &#169; This Calculator belongs to Hector Recio
     </footer>
 </html>
